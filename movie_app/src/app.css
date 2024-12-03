@@ -1,0 +1,95 @@
+/* Modern CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* App Container */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Movie Details (Left Side) */
+.movie-list {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.movie-list h2 {
+  color: #4c1d95;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.movie-list ul {
+  list-style: none;
+}
+
+.movie-list p {
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #f1f5f9;
+}
+
+.movie-list p:hover {
+  background-color: #e2e8f0;
+  transform: translateX(4px);
+}
+
+/* Movie Display (Right Side) */
+.movie-display {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.movie-display h1 {
+  color: #4c1d95;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.movie-info {
+  display: grid;
+  gap: 1rem;
+}
+
+.movie-info p {
+  padding: 0.75rem;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #4c1d95;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+  }
+  
+  body {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,11 @@
+#clickMe{
+    width: 300px;
+    height: 150px;
+    font-size: 30px;
+    border-radius: 20px;
+    /* border: none; */
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border: 1px solid black;
+}
+
